@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv='cache-control' content='no-cache'>
+	<meta http-equiv='expires' content='0'>
+	<meta http-equiv='pragma' content='no-cache'>
+    <title>Title</title>
+</head>
+<body>
+
+	<h1>Economizer Data Plot</h1>
+	<img src="{{url_for('static', filename=filename)}}" />
+    <h2>Data below of plot</h2>
+	{% for table in tables %}
+				{{ table|safe }}
+	{% endfor %}
+
+</body>
+</html>
