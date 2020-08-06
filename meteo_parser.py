@@ -105,8 +105,8 @@ class OpenWeather:
 
     @property
     def descrip(self):
-        return self.data["weather"]["description"]
+        return self.data["weather"][0]["description"]
 
     @property
     def city(self):
-        return self.data["sys"]["name"]
+        return self.data["name"]
